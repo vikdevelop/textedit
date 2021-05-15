@@ -1,9 +1,9 @@
-# Soubor main.py
+# Soubor main.py programu TextEdit
 #
 # Copyright 2021 super-vik
 #
-# Tento program je svobodný software: můžete jej dále šířit a nebo upravovat
-#  za podmínek licence GNU General Public License zveřejněné uživatelem
+# Tento program je svobodný software. Můžete jej dále šířit a nebo upravovat
+# za podmínek licence GNU General Public License zveřejněné uživatelem
 # Free Software Foundation, buď verze 3 licence, nebo
 # (dle vašeho uvážení) jakákoli novější verze.
 #
@@ -31,13 +31,13 @@ class HeaderBarWindow(Gtk.Window):
         self.set_border_width(10)
         self.set_default_size(700, 1200)
   
-        # Create HeaderBar.
+        # HeaderBar
         hb = Gtk.HeaderBar()
         hb.set_show_close_button(True)
         hb.props.title = "TextEdit"
         self.set_titlebar(hb)
           
-        # Create Box
+        # Tlačítko uložit
         box = Gtk.Box(orientation = Gtk.Orientation.HORIZONTAL)
         Gtk.StyleContext.add_class(box.get_style_context(), "linked")
 
@@ -52,11 +52,11 @@ class HeaderBarWindow(Gtk.Window):
   
 win = HeaderBarWindow()
 win.connect("destroy", Gtk.main_quit)
-# Display the window.
+# Okno
 win.show_all()
-# Start the GTK + processing loop
+# Zpracovávání knihoeven GTK+
 Gtk.main()
-#Dialogové okno které se ptá, jestli změny zahodit, nebo uložit
+# Dialogové okno které se ptá, jestli změny zahodit, nebo uložit
 class DialogWindow(Gtk.Window):
     def __init__(self):
         Gtk.Window.__init__(self, title="Opravdu chcete změny zahodit?")
