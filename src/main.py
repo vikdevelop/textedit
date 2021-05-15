@@ -37,18 +37,11 @@ class HeaderBarWindow(Gtk.Window):
         hb.props.title = "TextEdit"
         self.set_titlebar(hb)
           
-        # Create Button
-        button = Gtk.Button()
-        icon = Gio.ThemedIcon(name ="mail-send-receive-symbolic")
-        image = Gtk.Image.new_from_gicon(icon, Gtk.IconSize.BUTTON)
-        button.add(image)
-        hb.pack_end(button)
-        
         # Create Box
         box = Gtk.Box(orientation = Gtk.Orientation.HORIZONTAL)
         Gtk.StyleContext.add_class(box.get_style_context(), "linked")
 
-        button = Gtk.Button("Otevřít projekt",("OpenProjectWindow"))
+        button = Gtk.Button("Uložit")
         button.add(Gtk.Arrow(Gtk.ArrowType.LEFT, Gtk.ShadowType.NONE))
         box.add(button)
         
@@ -63,6 +56,7 @@ win.connect("destroy", Gtk.main_quit)
 win.show_all()
 # Start the GTK + processing loop
 Gtk.main()
+#Dialogové okno které se ptá, jestli změny zahodit, nebo uložit
 class DialogWindow(Gtk.Window):
     def __init__(self):
         Gtk.Window.__init__(self, title="Opravdu chcete změny zahodit?")
@@ -97,6 +91,3 @@ win = DialogWindow()
 win.connect("delete-event", Gtk.main_quit)
 win.show_all()
 Gtk.main()
-class OpenProjectWindow(Gtk.Window):
-    def __init__(self):
-        Gtk.Window.__init__(self, title="Otevřít Projekt")
