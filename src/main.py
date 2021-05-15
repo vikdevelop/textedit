@@ -1,6 +1,6 @@
 # Soubor main.py programu TextEdit
 #
-# Copyright 2021 super-vik
+# Copyright 2021 vik.dev
 #
 # Tento program je svobodný software. Můžete jej dále šířit a nebo upravovat
 # za podmínek licence GNU General Public License zveřejněné uživatelem
