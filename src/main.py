@@ -29,8 +29,8 @@ class HeaderBarWindow(Gtk.Window):
     def __init__(self):
         Gtk.Window.__init__(self, title ="textedit")
         self.set_border_width(10)
-        self.set_default_size(700, 1200)
-  
+        self.set_default_size(720, 1440)
+ 
         # HeaderBar
         hb = Gtk.HeaderBar()
         hb.set_show_close_button(True)
