@@ -1,5 +1,5 @@
-# textedit
-TextEdit je poznámkový blok využívající knihovny GTK+. Je naprogramován v Jazyce Python.
+# TextEdit
+TextEdit je jednoduchý poznámkový blok využívající knihovny GTK+. Je naprogramován v Jazyce Python.
 
 # Ukázka Programu
 
