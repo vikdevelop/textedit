@@ -1,4 +1,5 @@
 # textedit
-TextEdit je jednoduchý textový editor, spíše poznámkový blok. Jedná se o můj první program. Učím se v Pythonu.
+TextEdit je poznámkový blok využívající knihovny GTK+. Je naprogramován v Jazyce Python.
 
+# Ukázka Programu
 ![Ukázka Programu](https://github.com/vikdevelop/textedit/blob/main/src/img/textedit.png)
