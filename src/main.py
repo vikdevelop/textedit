@@ -8,7 +8,7 @@
 #
 # Tento program je distribuován v naději, že bude užitečný,
 # ale BEZ JAKÉKOLI ZÁRUKY; bez dokonce předpokládané záruky pro
-# PRODEJNOST nebo PRO KONKRÉTNÍ ÚČEL. Viz
+# PRODEJNOST nebo PRO KOMERČNÍ ÚČEL. Viz
 # GNU General Public License pro více informací.
 #
 # Měli byste obdržet kopii GNU General Public License
