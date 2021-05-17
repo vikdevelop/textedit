@@ -1,20 +1,18 @@
-# Soubor main.py programu TextEdit
+# Soubor main.py (hlavní soubor) programu TextEdit
 #
 # Copyright 2021 vik.dev
 #
 # Tento program je svobodný software. Můžete jej dále šířit a nebo upravovat
-# za podmínek licence GNU General Public License zveřejněné uživatelem
-# Free Software Foundation, buď verze 3 licence, nebo
-# (dle vašeho uvážení) jakákoli novější verze.
+# za podmínek licence GNU General Public License verze 3 (nebo novější verze) vydané
+# Free Software Foundation.
 #
 # Tento program je distribuován v naději, že bude užitečný,
-# ale BEZ JAKÉKOLI ZÁRUKY; bez dokonce předpokládané záruky
-# PRODEJNOST nebo VHODNOST PRO KONKRÉTNÍ ÚČEL. Viz
+# ale BEZ JAKÉKOLI ZÁRUKY; bez dokonce předpokládané záruky pro
+# PRODEJNOST nebo PRO KONKRÉTNÍ ÚČEL. Viz
 # GNU General Public License pro více informací.
 #
-# Měli jste obdržet kopii GNU General Public License
-# spolu s tímto programem. Pokud ne, viz <http://www.gnu.org/licenses/>.
-
+# Měli byste obdržet kopii GNU General Public License
+# spolu s tímto programem. Pokud ne, viz <https://www.gnu.org/licenses/>.
 
 import sys
 import gi
