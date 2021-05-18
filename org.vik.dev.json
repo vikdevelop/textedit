@@ -30,7 +30,7 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "file:///home/viktor/Projects/helloworld-"
+                    "url" : "file:///Projects/textedit"
                 }
             ]
         }
