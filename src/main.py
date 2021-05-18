@@ -50,10 +50,9 @@ class HeaderBarWindow(Gtk.Window):
   
 win = HeaderBarWindow()
 win.connect("destroy", Gtk.main_quit)
-# Okno
 win.show_all()
-# Zpracovávání knihoeven GTK+
 Gtk.main()
+
 # Dialogové okno které se ptá, jestli změny zahodit, nebo uložit
 class DialogWindow(Gtk.Window):
     def __init__(self):
