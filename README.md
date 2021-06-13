@@ -13,5 +13,5 @@ git clone https://github.com/vikdevelop/textedit.git
 ```
 2. Přejděte do adresáře a spusťtě aplikaci 
 ```
- cd ./textedit/src && python -m main.py
+ cd ./textedit/src && python -m textedit.py
  ```
