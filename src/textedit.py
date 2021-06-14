@@ -1,17 +1,12 @@
-
 # Copyright 2021 vikdevelop
 #
 # Tento program je svobodný software. Můžete jej dále šířit a nebo upravovat
 # za podmínek licence GNU General Public License verze 3 (nebo novější verze) vydané
 # Free Software Foundation.
 #
-# Tento program je distribuován v naději, že bude užitečný,
-# ale BEZ JAKÉKOLI ZÁRUKY; bez dokonce předpokládané záruky pro
-# PRODEJNOST nebo PRO KOMERČNÍ ÚČEL. Viz
-# GNU General Public License pro více informací.
+# Tento program je šířen BEZ JAKÉKOLIV ZÁRUKY.
 #
-# Měli byste obdržet kopii GNU General Public License
-# spolu s tímto programem. Pokud ne, viz <https://www.gnu.org/licenses/>.
+# Licenci byste měli obdržet spolu s tímto programem. Pokud ne, viz <https://www.gnu.org/licenses/>.
 
 import gi
 
@@ -22,7 +17,7 @@ from gi.repository import Gtk, Pango
 class SearchDialog(Gtk.Dialog):
     def __init__(self, parent):
         Gtk.Dialog.__init__(
-            self, title="Search", transient_for=parent, modal=True,
+            self, title="Hledat", transient_for=parent, modal=True,
         )
         self.add_buttons(
             Gtk.STOCK_FIND,
@@ -42,7 +37,7 @@ class SearchDialog(Gtk.Dialog):
         self.show_all()
 
 
-class TextViewWindow(Gtk.Window):
+class TextEditWindow(Gtk.Window):
     def __init__(self):
         Gtk.Window.__init__(self, title="TextEdit")
 
@@ -219,28 +214,24 @@ class TextViewWindow(Gtk.Window):
             self.search_and_mark(text, match_end)
 
 
-win = TextViewWindow()
+win = TextEditWindow()
 win.connect("destroy", Gtk.main_quit)
 win.show_all()
 Gtk.main()
 
 class DialogWindow(Gtk.Window):
     def __init__(self):
-        Gtk.Window.__init__(self, title="Opravdu chcete změny zahodit?")
-        self.set_border_width(10)
+        Gtk.Window.__init__(self, title="Zahodit změny?")
+        self.set_border_width(52)
 
         hbox = Gtk.Box(spacing=6)
         self.add(hbox)
 
-        button = Gtk.Button.new_with_label("Zrušit")
-        button.connect("clicked", self.on_close_clicked)
-        hbox.pack_start(button, True, True, 0)
-
-        button = Gtk.Button.new_with_mnemonic("Ponechat")
+        button = Gtk.Button.new_with_mnemonic("Ne")
         button.connect("clicked", self.on_open_clicked)
         hbox.pack_start(button, True, True, 0)
 
-        button = Gtk.Button.new_with_mnemonic("Zahodit")
+        button = Gtk.Button.new_with_mnemonic("Ano")
         button.connect("clicked", self.on_close_clicked)
         hbox.pack_start(button, True, True, 0)
 
@@ -251,7 +242,7 @@ class DialogWindow(Gtk.Window):
         print('"Open" button was clicked')
 
     def on_close_clicked(self, button):
-        print("Closing application")
+        print("Zavirani programu TextEdit")
         Gtk.main_quit()
 
 win = DialogWindow()
