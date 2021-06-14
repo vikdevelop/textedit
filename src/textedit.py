@@ -33,7 +33,7 @@ class SearchDialog(Gtk.Dialog):
 
         box = self.get_content_area()
 
-        label = Gtk.Label(label="začněte psát v TextEdit")
+        label = Gtk.Label(label="Hledat v dokumentu")
         box.add(label)
 
         self.entry = Gtk.Entry()
@@ -129,8 +129,7 @@ class TextViewWindow(Gtk.Window):
         self.textview = Gtk.TextView()
         self.textbuffer = self.textview.get_buffer()
         self.textbuffer.set_text(
-            "Vítejte v TextEdit! Zde můžete psát cokoliv :) "
-        )
+            "Vítejte v TextEdit, svobodném editoru textu!")
         scrolledwindow.add(self.textview)
 
         self.tag_bold = self.textbuffer.create_tag("bold", weight=Pango.Weight.BOLD)
