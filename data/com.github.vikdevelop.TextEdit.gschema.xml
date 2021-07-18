@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="textedit">
+	<schema id="com.github.vikdevelop.TextEdit" path="/com/github/vikdevelop/TextEdit/">
+	</schema>
+</schemalist>

@@ -1,0 +1,7 @@
+data/com.github.vikdevelop.TextEdit.desktop.in
+data/com.github.vikdevelop.TextEdit.appdata.xml.in
+data/com.github.vikdevelop.TextEdit.gschema.xml
+src/window.ui
+src/main.py
+src/window.py
+
