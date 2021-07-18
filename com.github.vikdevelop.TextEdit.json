@@ -29,7 +29,7 @@
                 {
                     "type" : "archive",
                     "url" : "https://github.com/vikdevelop/textedit/archive/refs/tags/1.0.3.tar.gz"
-                    "sha256" : "001101b11b8f8d2fac2a3caa6933b66926a269cf2e942536dac826aacf12b06e"
+                    "sha256": "001101b11b8f8d2fac2a3caa6933b66926a269cf2e942536dac826aacf12b06e"
                 }
             ]
         }
