@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=textedit
+Exec=textedit
+Icon=com.github.vikdevelop.TextEdit
+Terminal=false
+Type=Application
+Categories=Utilites
+StartupNotify=true
+# This is a .desktop file for TextEdit on your Worksplace.
