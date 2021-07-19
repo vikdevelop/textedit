@@ -3,6 +3,17 @@
 	<id>com.github.vikdevelop.TextEdit.desktop</id>
 	<metadata_license>CC0-1.0</metadata_license>
 	<project_license>GPL-3.0-or-later</project_license>
-	<description>
-	</description>
+	<name>TextEdit</name>
+        <description>Sinple GTK+ editor</description>
+        <developer_name>vikdevelop</developer-name>
+        <url type="homepage">https://github.com/vikdevelop/textedit</url>
+  <url type="bugtracker">https://github.com/vikdevelop/textedit/issues</url>
+  <url type="help">https://github.com/vikdevelop/textedit/issues</url>
+<releases>
+    <release version="1.0.3" date="2021-07-20">
+      <description>
+        <p>version 1.0.3:</p>
+      </description>
+    </release>
+  </releases>
 </component>
