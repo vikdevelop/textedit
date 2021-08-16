@@ -1,0 +1,28 @@
+# Maintainer: vikdevelop <super-vik1@protonmail.com>
+
+pkgname=textedit
+_pkgname=TextEdit
+pkgdesc="Simple Texteditor in PyGTK"
+url="https://github.com/vikdevelop/$pkgname"
+pkgver=1.0.4
+pkgrel=1
+arch=('any')
+license=('GPL3')
+source=('https://github.com/vikdevelop/textedit/archive/refs/tags/1.0.4.tar.gz')
+depends=('python>=3' 'python-requests')
+sha256sums=('87a9643b64ac20b79d62979d8392e81a3b489ff02a5c20d44f2eb370eaca53f2')
+
+prepare()
+{
+  echo "#!/bin/bash\npython /usr/share/$pkgname/src/main.py \"\$@\"" > $pkgname
+}
+
+package()
+{
+  install -Dm755 $pkgname "$pkgdir/usr/bin/$pkgname"
+  cd $pkgname-1.0.4
+  install -Dm755 $pkgname.desktop "$pkgdir/usr/share/applications/$pkgname.desktop"
+  install -Dm755 $srcdir/textedit-1.0.4/src/main.py "$pkgdir/usr/share/$pkgname/src/main.py"
+  install -Dm644 README.md "$pkgdir/usr/share/$pkgname/README.md"
+  install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}
