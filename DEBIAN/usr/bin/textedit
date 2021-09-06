@@ -1,0 +1,1 @@
+#!/bin/bash\npython /usr/share/textedit/src/main.py "$@"
