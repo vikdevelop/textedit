@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=TextEdit
-Description=Simple PyGTK Text Editor
-Description[cs]=Jednoduchý PyGTK Textový editor
-Icon=openoffice4-oasis-text-template
-Exec=cd /usr/share/textedit/src && python3 -m main.py
-Category=Office
